@@ -1,0 +1,603 @@
+
+  /**********************************/
+ /**************fonts***************/
+/**********************************/
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, .btn, #side-info{
+    font-family: 'Comfortaa', serif;
+}
+
+
+  /**********************************/
+ /**************couleurs************/
+/**********************************/
+
+a{
+    color : #25404B;
+}
+
+a:hover{
+    text-decoration: none;
+    color : #1B1C23;
+}
+
+
+.text-yellow{
+    color : #F7DC24 !important;
+}
+
+.text-green{
+    color : #132324 !important;
+}
+
+.text-purple{
+    color : #1B1C23 !important;
+}
+
+.text-blue{
+    color : #25404B !important;
+}
+
+.back-yellow{
+    background-color : #F7DC24 !important;
+}
+
+.back-green{
+    background-color : #132324 !important;
+}
+
+.back-purple{
+    background-color : #1B1C23 !important;
+}
+
+.back-blue{
+    background-color : #25404B !important;
+}
+
+/*******Grille*******/
+
+@media(min-width: 1200px){
+.container {
+   width: 1260px;
+ }
+}
+
+  /**********************************/
+ /*************#header***************/
+/**********************************/
+
+#header{
+    background: no-repeat top url("../images/header/fond.png");
+    color : white;
+    position : relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#header .container.brand{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#header #logo img{
+    width: 100%;
+    padding-top: 22px;
+}
+
+#header #side-info{
+    padding-top: 28px;
+}
+
+#header #side-info #free{
+    padding : 9px 7px;
+    font-size: 15px;
+}
+
+#header #date-loc{
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+/*nav*/
+
+#header .layer-nav{
+    background: linear-gradient(to bottom, rgba(37,64,75,0.05) 0%,rgba(37,64,75,1) 100%);
+}
+
+#header nav a{
+    color : white;
+    background-color : transparent !important;
+
+}
+
+#header nav a:hover, #header nav a:active{
+    color: #F7DC24;
+}
+
+#header nav.navbar.row{
+    margin-top : 0px;
+    margin-bottom: 0px;
+}
+
+#header .navbar-toggle{
+    float : none !important;
+    margin-top : 0px;
+    margin-right: 0px;
+    margin-bottom : 10px;
+}
+
+#header .navbar-toggle .icon-bar{
+    background-color: white;
+}
+
+#header .navbar-toggle:active .icon-bar, #header .navbar-toggle:hover .icon-bar, #header .navbar-toggle:focus .icon-bar{
+    background-color: #F7DC24;
+}
+
+.navbar-nav > li > a {
+    font-size: 18px;
+    padding: 30px;
+    font-family: Comfortaa;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 8px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 50px !important;
+    height: 4px !important;
+    border-radius: 5px !important;
+}
+
+/*media queries*/
+
+@media(min-width: 1415px){
+
+    #header #logo{
+        width : 800px;
+    }
+
+}
+
+@media(min-width: 1200px){
+
+    #header #side-info{
+    padding-left : 90px;
+    }
+
+    #header #logo{
+        width : 800px;
+    }
+
+}
+
+@media(max-width: 530px){
+
+    #header #side-info #free{
+        font-size: 12px;
+    }
+
+        #header #side-info #date-loc{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+  /***********************************************/
+ /**********Section 1 - Actualité ***************/
+/***********************************************/
+section{
+    margin-top: 30px;
+}
+
+section header{
+    color : white;
+}
+
+section article{
+    margin-top: 50px;
+}
+
+#news .news{
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left : 0px;
+    margin-right: 5px;
+}
+
+.card{
+    position : relative;
+    padding : 0px;
+}
+
+.card img{
+    width : 100%;
+}
+
+#news .card .overlay-date{
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    font-size : 18px;
+    width : 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(37,64,75,0.6);
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#news .news .reseau-soc{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#news .news .reseau-soc i{
+    color : #25404B;
+    padding-right: 10px;
+}
+
+#news .news .reseau-soc i:hover{
+    color : #132324;
+}
+
+#news .news .readmore{
+    border-radius: 5px;
+    color: white;
+    border : 1px solid #25404B;
+    margin-bottom: 10px;
+}
+
+#news .news .readmore:hover{
+    color: #25404B !important;
+    background-color: white !important;
+}
+
+#news .readmore-news{
+    border-radius: 5px;
+    border : 1px solid white;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 8px;    
+}
+
+#news .readmore-news:hover{
+    color : #1B1C23 !important;
+}
+
+@media (max-width: 530px){
+    #news .news .reseau-soc{
+        padding-left : 0px;
+    }
+}
+
+  /***********************************************/
+ /**********Section 2 - Projections *************/
+/***********************************************/
+
+#projections{
+    padding-left : 80px;
+}
+
+#projections header{
+    margin-bottom: 50px;
+}
+
+#projections .row{
+    margin-right: 0px;
+}
+
+
+#projections .card .overlay-projection{
+    position : absolute;
+    bottom : 0px;
+    width : 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(37,64,75,0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#projections .card .overlay-projection:hover{
+    background-color: rgba(37,64,75,0.8);
+}
+
+#projections .card{
+    overflow: hidden;
+}
+
+#projections h3{
+    font-size : 16px;
+    margin : 0px;
+    font-weight: bold;
+}
+
+#projections .book button{
+    padding: 10px;
+    border : 1px solid;
+    border-radius : 5px;
+    background-color: white;
+    font-size : 16px;
+    letter-spacing: 1px;
+    margin-top : 5px;
+    margin-bottom: 5px;
+
+}
+
+#projections .book button:hover{
+    color : #132324 !important;
+}
+
+
+#projections i{
+    padding-right: 5px;
+}
+
+
+#projections .form-control{
+    margin-top : 10px;
+}
+
+#projections button{
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #25404B;
+    margin-top: 10px;
+}
+
+#projections .modal-body img{
+    width: 30%;
+    border-radius : 10px;
+    margin-right: 5px;
+    margin-bottom : 5px;
+}
+
+@media(min-width: 992px){
+
+    #projections .card{
+    height: 610px;
+    }
+
+}
+
+
+@media(min-width: 1200px){
+
+    #projections .card{
+    height: 237px;
+    }
+
+    #projections .card .book{
+    display : none;
+    }
+
+    #projections .card:hover .book{
+        display :block;
+    }
+
+    #projections-page #projections .card{
+    height: 527px;
+    }
+
+}
+
+@media(max-width: 992px){
+
+    #projections .card{
+    height: 402px;
+    }
+
+    #projections {
+    padding-left: 30px;
+    }
+
+}
+
+.layer-content-home{
+    padding-bottom: 50px;
+} 
+
+  /**************************************/
+ /**Section 3 - Le festival/A propos ***/
+/**************************************/
+
+#festival{
+    margin-top : 0px;
+    background: no-repeat center url("../images/section2/monceau.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#festival .layer{
+    background-color: rgba(27,28,35,0.95);
+    padding-top : 110px;
+    padding-bottom: 110px;
+
+}
+
+#festival .jumbotron{
+    margin-bottom: 0px;
+    border-radius : 5px;
+    overflow: hidden;
+}
+
+
+#festival .jumbotron h1{
+    font-size: 33px;
+}
+
+#festival .jumbotron p{
+    font-size: 14px;
+}
+
+
+  /**************************************/
+ /***********Formulaire Contact ********/
+/**************************************/
+
+#contact .form-group{
+    width: 70%;
+}
+
+#contact .form-control{
+    margin-top : 30px;
+}
+
+#contact input.form-control{
+    width: 50%;
+}
+
+ #contact button{
+    margin-top : 50px;
+    padding: 10px;
+ }
+
+  /**********************************/
+ /**************Footer**************/
+/**********************************/
+
+footer{
+    color : white;
+    padding-top : 50px;
+    padding-bottom: 50px;
+}
+
+footer i{
+    padding-right: 5px;
+}
+
+footer h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top :0px;
+    margin-bottom: 20px;
+}
+
+footer h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top :0px;
+}
+
+footer iframe{
+    width: 90%;
+}
+
+footer #ratp{
+    margin-top : 15px;
+}
+
+footer #ratp img{
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+}
+
+footer #ratp span{
+    margin-left: 5px;}
+
+
+footer i{
+    color : white;
+}
+
+footer i:hover{
+    color : #F7DC24;
+}
+
+footer #newsletter{
+    margin-top : 20px;
+}
+
+.form-control:focus {
+    border-color: #25404B;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(37,64,75,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(37,64,75,.6);
+}
+
+.form-control:focus {
+    border-color: #F7DC24;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(240,220,35,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(240,220,35,.6);
+}
+
+.white-btn{
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+@media (max-width: 920px){
+    .col-footer{
+        margin-top : 40p;x
+    }
+}
+
+  /**********************************/
+ /**************Agenda**************/
+/**********************************/
+
+#calendrier header{
+    margin-bottom: 50px;
+}
+
+.agenda{
+    background-color: white;
+}
+
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+.agenda .agenda-film { width: 140px; } 
+
+@media (max-width: 476px) {
+    .agenda .agenda-date .dayofmonth {
+        float : none;
+        text-align: left;
+    }
+
+    .agenda > .table-responsive > .table > thead > tr > th, .agenda > .table-responsive > .table tr > td{
+    white-space: normal;
+    }
+
+}
